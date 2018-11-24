@@ -53,7 +53,7 @@ for bit in range(wordsize):
     mibs.apply_xor(y6, y2, y2)
     mibs.apply_xor(y5, y1, y1)
 
-# XOR of output of round functiond and right side of input
+# XOR of output of round function and right side of input
 for nibble in range(8):
     for bit in range(4):        
         mibs.apply_xor(y[shuffle2_inv[nibble]][bit], s[4 * nibble + bit + 32], s[4 * nibble + bit + 32])
